@@ -1,0 +1,62 @@
+body {
+    background: #000000;
+}
+
+.typer {
+    font-family: 'roboto', sans-serif;
+    font-size: 5em;
+    color: #ffffff;
+    font-weight: 200;
+    margin: 0.4em 0;
+    position: absolute;
+    left: 100px;
+    top: 2.5em;
+}
+
+.mainDescription {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.8em;
+    color: #adadad;
+    font-weight: 200;
+    margin: 0.4em 0;
+    position: absolute;
+    left: 100px;
+    top: 11.1em;
+    width: 70%;
+
+}
+
+.txt-rotate ::after { /* Cursor and blinking animation */
+    content: "";
+    width: 3px;
+    height: 0.8em;
+    background: #e0dbdb;
+    display: inline-block;
+    animation: cursor-blink 3s steps(1) infinite;
+}
+@keyframes cursor-blink {
+    0% {
+        visibility: visible;
+        opacity: 100;
+    }
+    20% {
+        visibility: hidden;
+        opacity: 0%;
+    }
+    40% {
+        visibility: visible;
+        opacity: 100;
+    }
+    60% {
+        visibility: hidden;
+        opacity: 0%;
+    }
+    80% {
+        visibility: visible;
+        opacity: 100;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0%;
+    }
+}
