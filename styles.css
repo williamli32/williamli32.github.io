@@ -6,23 +6,25 @@ body {
     font-family: 'roboto', sans-serif;
     font-size: 5em;
     color: #ffffff;
-    font-weight: 200;
+    font-weight: 100;
     margin: 0.4em 0;
-    position: absolute;
-    left: 100px;
+    left: 150px;
     top: 2.5em;
+}
+
+.txt-rotate {
+    font-weight: 400;
 }
 
 .mainDescription {
     font-family: 'roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.45em;
     color: #adadad;
     font-weight: 200;
     margin: 0.4em 0;
-    position: absolute;
-    left: 100px;
-    top: 11.1em;
-    width: 70%;
+    left: 150px;
+    top: 14em;
+    width: 60%;
 
 }
 
@@ -32,9 +34,9 @@ body {
     height: 0.8em;
     background: #e0dbdb;
     display: inline-block;
-    animation: cursor-blink 3s steps(1) infinite;
+    animation: cursorBlink 3s steps(1) infinite;
 }
-@keyframes cursor-blink {
+@keyframes cursorBlink {
     0% {
         visibility: visible;
         opacity: 100;
@@ -59,4 +61,100 @@ body {
         visibility: hidden;
         opacity: 0%;
     }
+}
+
+.workSection {
+    color: #ffffff;
+}
+
+#credit {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#logoFace:hover {
+    animation: ballRoll 3s;
+}
+@keyframes ballRoll {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-50deg);
+    }
+    55% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#logoFace {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 2.5em;
+    letter-spacing: .015em;
+    font-size: 1.75em;
+    vertical-align: middle;
+    margin: 0 0 0 1.25em;
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100px;
+    width: 100px;
+}
+
+/* Nav */
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+/* Menu bar items hover action */
+#nav a:hover {
+    color: #fdff98;
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.9em;
+}
+
+#nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav ul li {
+    float: left;
+    line-height: 4.5em;
+}
+
+/* Menu Bar items styling */
+#nav ul li a, #nav ul li span {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    font-family: 'tahoma', sans-serif;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.5em 1em 0.5em 1em;
 }
