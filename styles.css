@@ -169,6 +169,7 @@ body {
     position: absolute;
     opacity: 0;
 }
+
 @keyframes ballRollSkills {
     0% {
     }
@@ -179,7 +180,6 @@ body {
 
 #poolCue {
     height: 300px;
-    width: 600px;
     left: 70%;
     position: absolute;
 }
@@ -188,13 +188,13 @@ body {
     0% {
     }
     30% {
-        transform: translate(40%);
+        transform: translate(11%);
     }
-    45% {
-        transform: translate(-30%);
+    40% {
+        transform: translate(-6.25%);
     }
-    60% {
-        transform: translate(-30%);
+    55% {
+        transform: translate(-6.25%);
     }
     100% {
         transform: translate(0%);

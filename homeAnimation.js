@@ -45,9 +45,9 @@ async function startPoolAnimation(ballIndex) {
     currentBall.style.opacity = '1'
     //play poolCue animation: retracts cue to hit the ball
     poolCue.style.animation = 'hitBall 1.5s'
-    await sleep(675)
-    //play the ball rolling animation: move left off screen. Wait 675ms so it appears that it was hit by the cue.
-    currentBall.style.animation = 'ballRollSkills 1s'
+    await sleep(575)
+    //play the ball rolling animation: move left off screen. Wait 575ms so it appears that it was hit by the cue.
+    currentBall.style.animation = 'ballRollSkills 0.8s'
     //if ballIndex is 0 (next ball is the 1 ball), then wait a time. This is to prevent the 1 ball overlapping the cue ball.
     if(ballIndex === 0) {
         await sleep(800)
