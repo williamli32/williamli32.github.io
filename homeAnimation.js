@@ -54,6 +54,7 @@ async function startPoolAnimation(ballIndex) {
         currentBall.style.opacity = '0'
         await sleep(1200)
         nextBall.style.opacity = '1'
+        poolCue.style.animation = ''
     }
     //else, show next ball, hide the current ball after a certain time. Gives the impression of going off screen.
     else {
