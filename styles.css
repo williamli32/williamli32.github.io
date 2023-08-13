@@ -186,6 +186,7 @@ body {
 
 @keyframes hitBall {
     0% {
+        transform: translate(0%);
     }
     30% {
         transform: translate(11%);

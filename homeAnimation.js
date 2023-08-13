@@ -19,7 +19,7 @@ window.addEventListener('scroll', async () => {
             inProgress = true
             while(inProgress) {
                 //balls are ordered in backwards order so when the ball on top gets hit, the next gets cleanly revealed
-                for(let i=8; i>=0; i--) {
+                for(let i=9; i>=0; i--) {
                     startPoolAnimation(i)
                     await sleep(3000)
                 }
@@ -35,8 +35,8 @@ async function startPoolAnimation(ballIndex) {
     let nextBall = ''
     //if-else to cycle through the balls correctly
     if(ballIndex-1 === -1) {
-        //ballIndex 8 is the 1 ball (yellow with Java logo)
-        nextBall = document.getElementsByClassName('poolBalls')[8]
+        //ballIndex 9 is the 1 ball (yellow with Java logo)
+        nextBall = document.getElementsByClassName('poolBalls')[9]
     }
     else {
         nextBall = document.getElementsByClassName('poolBalls')[ballIndex-1]
@@ -58,10 +58,11 @@ async function startPoolAnimation(ballIndex) {
     //else, show next ball, hide the current ball after a certain time. Gives the impression of going off screen.
     else {
         nextBall.style.opacity = '1'
-        await sleep(800)
+        await sleep(600)
         currentBall.style.opacity = '0'
     }
     //reset animations so they can be replayed
+    await sleep(400)
     poolCue.style.animation = ''
     currentBall.style.animation = ''
 }
