@@ -1,6 +1,6 @@
 body {
     background: #000000;
-    height: 1500px;
+    height: 1600px;
     overflow-x: hidden;
 }
 
@@ -158,11 +158,24 @@ body {
     font-size: 3em;
     color: #ffffff;
     font-weight: 100;
-    padding-left: 18%;
     padding-top: 15%;
     padding-bottom: 6%;
+    text-align: center;
+    width: 100%;
 }
 
+#skillsFooterHome {
+    font-family: 'tahoma', sans-serif;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 27%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+/* Pool balls and cue animation */
 .poolBalls {
     width: 20%;
     left: 40%;
@@ -170,6 +183,7 @@ body {
     opacity: 0;
 }
 
+/* Ball rolling animation */
 @keyframes ballRollSkills {
     0% {
     }
@@ -184,6 +198,7 @@ body {
     position: absolute;
 }
 
+/* Cue stick moving back and hitting ball animation */
 @keyframes hitBall {
     0% {
         transform: translate(0%);
@@ -202,10 +217,29 @@ body {
     }
 }
 
+/* Button to go back to top */
+.backToTop {
+    --offset: 50px; 
+    
+    position: sticky;
+    left: 93%;
+    bottom: 20px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'tahoma', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
 #credit {
     color: #ffffff;
     font-family: 'tahoma', sans-serif;
     text-align: center;
     width: 100%;
-    padding-top: 23%;
+    padding-bottom: 1%;
 }

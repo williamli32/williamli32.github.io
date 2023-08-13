@@ -14,14 +14,14 @@ window.addEventListener('scroll', async () => {
 
     //detects when to start the pool ball animation
     console.log(window.scrollY)
-    if(window.scrollY>300) {
+    if(window.scrollY>375) {
         if(!inProgress) {
             inProgress = true
             while(inProgress) {
                 //balls are ordered in backwards order so when the ball on top gets hit, the next gets cleanly revealed
                 for(let i=9; i>=0; i--) {
                     startPoolAnimation(i)
-                    await sleep(3000)
+                    await sleep(3200)
                 }
             }
         }
