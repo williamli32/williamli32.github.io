@@ -1,6 +1,7 @@
 body {
     background: #000000;
     height: 1500px;
+    overflow-x: hidden;
 }
 
 .typer {
@@ -8,9 +9,6 @@ body {
     font-size: 5em;
     color: #ffffff;
     font-weight: 100;
-    margin: 0.4em 0;
-    left: 150px;
-    top: 2.5em;
     padding-left: 10%;
     padding-top: 5%;
 }
@@ -24,9 +22,6 @@ body {
     font-size: 1.45em;
     color: #adadad;
     font-weight: 200;
-    margin: 0.4em 0;
-    left: 150px;
-    top: 14em;
     width: 68%;
     padding-left: 10%;
     line-height: 1.3;
@@ -71,19 +66,10 @@ body {
     color: #ffffff;
 }
 
-#credit {
-    color: #ffffff;
-    font-family: 'tahoma', sans-serif;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px;
-}
-
 #logoFace:hover {
-    animation: ballRoll 3s;
+    animation: ballRollLogo 2.2s;
 }
-@keyframes ballRoll {
+@keyframes ballRollLogo {
     0% {
         transform: rotate(0deg);
     }
@@ -165,4 +151,105 @@ body {
     text-decoration: none;
     border-radius: 6px;
     padding: 0.5em 1em 0.5em 1em;
+}
+
+#skillsHeaderHome {
+    font-family: 'tahoma', sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-left: 18%;
+    padding-top: 15%;
+    padding-bottom: 6%;
+}
+
+.poolBalls {
+    width: 20%;
+    left: 40%;
+    position: absolute;
+    opacity: 0;
+}
+@keyframes ballRollSkills {
+    0% {
+    }
+    100% {
+        transform: translate(-500%);
+    }
+}
+
+#poolCue {
+    height: 300px;
+    width: 600px;
+    left: 70%;
+    position: absolute;
+}
+
+@keyframes hitBall {
+    0% {
+    }
+    30% {
+        transform: translate(40%);
+    }
+    45% {
+        transform: translate(-30%);
+    }
+    60% {
+        transform: translate(-30%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+/* #poolBallOne {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallTwo {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallThree {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallFour {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallFive {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallSix {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallSeven {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallEight {
+    height: 100px;
+    width: 100px;
+}
+
+#poolBallCue {
+    height: 100px;
+    width: 100px;
+} */
+
+#credit {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
 }
