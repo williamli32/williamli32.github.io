@@ -201,55 +201,10 @@ body {
     }
 }
 
-/* #poolBallOne {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallTwo {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallThree {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallFour {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallFive {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallSix {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallSeven {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallEight {
-    height: 100px;
-    width: 100px;
-}
-
-#poolBallCue {
-    height: 100px;
-    width: 100px;
-} */
-
 #credit {
     color: #ffffff;
     font-family: 'tahoma', sans-serif;
     text-align: center;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 23%;
 }
