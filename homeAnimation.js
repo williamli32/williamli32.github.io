@@ -1,5 +1,6 @@
 const [red, green, blue] = [0, 0, 0] //black
 const body = document.querySelector('#scrollWrapper')
+const referenceElement = document.querySelector('#skillsHeaderHome')
 let inProgress = false //lock; becomes true to prevent the starting of multiple animations
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -13,7 +14,6 @@ window.addEventListener('scroll', async () => {
     body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 
     //detects when to start the pool ball animation
-    console.log(window.scrollY)
     if(window.scrollY>375) {
         if(!inProgress) {
             inProgress = true
