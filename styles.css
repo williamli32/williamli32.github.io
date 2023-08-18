@@ -1,4 +1,9 @@
-body {
+#homeBody {
+    background: #000000;
+    overflow-x: hidden;
+}
+
+#aboutBody {
     background: #000000;
     height: 1600px;
     overflow-x: hidden;
@@ -6,15 +11,6 @@ body {
 
 @media screen and (min-width: 1000px) {
     
-}
-
-.hi {
-    font-family: 'roboto', sans-serif;
-    font-size: 5em;
-    color: #ffffff;
-    font-weight: 100;
-    padding-left: 10%;
-    padding-top: 5%;
 }
 
 .typer {
@@ -255,6 +251,6 @@ body {
     color: #ffffff;
     font-family: 'tahoma', sans-serif;
     text-align: center;
+    padding-top: 17%;
     width: 100%;
-    padding-bottom: 1%;
 }

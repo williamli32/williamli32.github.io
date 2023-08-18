@@ -1,5 +1,5 @@
 const [red, green, blue] = [0, 0, 0] //black
-const body = document.querySelector('#scrollWrapper')
+const body = document.querySelector('#aboutBody')
 const referenceElement = document.querySelector('#skillsHeaderHome')
 let inProgress = false //lock; becomes true to prevent the starting of multiple animations
 
