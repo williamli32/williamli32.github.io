@@ -77,17 +77,10 @@
 
 #logo {
     display: inline-block;
-    font-weight: 500;
-    line-height: 2.5em;
-    letter-spacing: .015em;
-    font-size: 1.75em;
-    vertical-align: middle;
-    margin: 0 0 0 1.25em;
-    text-decoration: none;
-    cursor: pointer;
-
     height: 100px;
     width: 100px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 #logo:hover {
