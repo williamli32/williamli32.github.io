@@ -1,29 +1,39 @@
-body {
+#homeBody {
     background: #000000;
+    overflow-x: hidden;
+}
+
+#aboutBody {
+    background: #000000;
+    height: 1600px;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+    
 }
 
 .typer {
     font-family: 'roboto', sans-serif;
     font-size: 5em;
     color: #ffffff;
-    font-weight: 200;
-    margin: 0.4em 0;
-    position: absolute;
-    left: 100px;
-    top: 2.5em;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.txt-rotate {
+    font-weight: 400;
 }
 
 .mainDescription {
     font-family: 'roboto', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.45em;
     color: #adadad;
     font-weight: 200;
-    margin: 0.4em 0;
-    position: absolute;
-    left: 100px;
-    top: 11.1em;
-    width: 70%;
-
+    width: 68%;
+    padding-left: 10%;
+    line-height: 1.3;
 }
 
 .txt-rotate ::after { /* Cursor and blinking animation */
@@ -32,9 +42,9 @@ body {
     height: 0.8em;
     background: #e0dbdb;
     display: inline-block;
-    animation: cursor-blink 3s steps(1) infinite;
+    animation: cursorBlink 3s steps(1) infinite;
 }
-@keyframes cursor-blink {
+@keyframes cursorBlink {
     0% {
         visibility: visible;
         opacity: 100;
@@ -59,4 +69,188 @@ body {
         visibility: hidden;
         opacity: 0%;
     }
+}
+
+.workSection {
+    color: #ffffff;
+}
+
+#logoFace:hover {
+    animation: ballRollLogo 2.2s;
+}
+@keyframes ballRollLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-50deg);
+    }
+    55% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#logoFace {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 2.5em;
+    letter-spacing: .015em;
+    font-size: 1.75em;
+    vertical-align: middle;
+    margin: 0 0 0 1.25em;
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100px;
+    width: 100px;
+}
+
+#menuFiller {
+    padding-top: 0.7%;
+}
+
+/* Nav */
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+/* Menu bar items hover action */
+#nav a:hover {
+    color: #fdff98;
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.9em;
+}
+
+#nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav ul li {
+    float: left;
+    line-height: 4.5em;
+}
+
+/* Menu Bar items styling */
+#nav ul li a, #nav ul li span {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    font-family: 'tahoma', sans-serif;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+#skillsHeaderHome {
+    font-family: 'tahoma', sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 15%;
+    padding-bottom: 6%;
+    text-align: center;
+    width: 100%;
+}
+
+#skillsFooterHome {
+    font-family: 'tahoma', sans-serif;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 27%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+/* Pool balls and cue animation */
+.poolBalls {
+    width: 20%;
+    left: 40%;
+    position: absolute;
+    opacity: 0;
+}
+
+/* Ball rolling animation */
+@keyframes ballRollSkills {
+    0% {
+    }
+    100% {
+        transform: translate(-500%);
+    }
+}
+
+#poolCue {
+    height: 32%;
+    width: 200%;
+    /* top: 112%; */
+    left: 70%;
+    position: absolute;
+}
+
+/* Cue stick moving back and hitting ball animation */
+@keyframes hitBall {
+    0% {
+        transform: translate(0%);
+    }
+    30% {
+        transform: translate(11%);
+    }
+    40% {
+        transform: translate(-5.85%);
+    }
+    55% {
+        transform: translate(-5.85%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+/* Button to go back to top */
+.backToTop {
+    --offset: 50px; 
+    
+    position: sticky;
+    left: 93%;
+    bottom: 20px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'tahoma', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+#credit {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    text-align: center;
+    padding-top: 17%;
+    width: 100%;
 }

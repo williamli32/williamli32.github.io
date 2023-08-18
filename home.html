@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="type.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <!-- id homeBody is used to identify the body for the home page. -->
+    <body id="homeBody">
+        <div id="headerWrapper">
+            <header id="header" class="container">
+                <!-- Filler to create a gap between the top of the site and the menu bar -->
+                <div id="menuFiller"></div>
+                <!-- Logo -->
+                <a href="home.html">
+                    <img id="logoFace" src="images/wl-logo.png" alt="The logo on William Li's personal website">
+                </a>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul class="navLinks">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <!-- Enables the typewriter effect -->
+            <div>
+                <div> 
+                    <h1 class="typer">Hi! I'm 
+                        <span
+                            class="txt-rotate"
+                            data-period="2000"
+                            data-rotate=
+                                '[ "William.", "a student.", "an aspiring software engineer.", "a pool player.", 
+                                "cloud practitioner certified.", "a tennis player.", "a watch collector/enthusiast.", "a motivated learner."
+                                ]'></span>
+                    </h1>
+                </div>
+            </div>
+            <!-- The main description under the typewriter -->
+            <div>
+                <!-- Inline CSS allows the highlighting of certain words in yellow -->
+                <p class="mainDescription">
+                    I'm a student at 
+                    <span style="color: #fdff98;">Cornell University</span> studying 
+                    <span style="color: #fdff98;">computer science</span>, economics, and business. I focus on developing
+                    <span style="color: #fdff98;">creative solutions</span> that provide useful functionality and improve efficiency. 
+                    I am particularly interested in the intersection between
+                    <span style="color: #fdff98;">technology</span> and 
+                    <span style="color: #fdff98;">finance</span>, exploring innovative ways to link the fields together. 
+                    Feel free to email me at
+                    <span style="color: #fdff98;">wl496@cornell.edu</span>!
+                </p>
+            </div>
+        </div>
+        <!-- Credit label -->
+        <div>
+            <p id="credit">
+                MADE FROM SCRATCH BY WILLIAM LI
+            </p>
+        </div>
+    </body>
+</html>

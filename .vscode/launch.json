@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open webpage",
-            "file": "c:\\Users\\wliem\\williamli32.github.io\\webpage.html"
+            "file": "c:\\Users\\wliem\\williamli32.github.io\\home.html"
         }
     ]
 }

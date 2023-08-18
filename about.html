@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <!-- id aboutBody is used to identify the body for the about page. -->
+    <body id="aboutBody">
+        <div id="headerWrapper">
+            <header id="header" class="container">
+                <!-- Filler to create a gap between the top of the site and the menu bar -->
+                <div id="menuFiller"></div>
+                <!-- Logo -->
+                <a href="home.html">
+                    <img id="logoFace" src="images/wl-logo.png" alt="The logo on William Li's personal website">
+                </a>
+                    
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul class="navLinks">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <h2 id="skillsHeaderHome">——— Continue scrolling to learn about my skills ———</h2>
+        </div>
+        <!-- Images that enable the pool cue animation to work -->
+        <div>
+            <img id="poolCue" src="images/cue-stick.png" alt="A pool cue">
+            <img class="poolBalls" src="images/wl-logo.png" alt="The logo on William Li's personal website">
+            <img class="poolBalls" src="images/pool-balls/cue.png" alt="A pool ball containing the Docker logo">
+            <img class="poolBalls" src="images/pool-balls/8.png" alt="A pool ball containing the AWS logo">
+            <img class="poolBalls" src="images/pool-balls/7.png" alt="A pool ball containing the Git logo">
+            <img class="poolBalls" src="images/pool-balls/6.png" alt="A pool ball containing the Flask logo">
+            <img class="poolBalls" src="images/pool-balls/5.png" alt="A pool ball containing the HTML logo">
+            <img class="poolBalls" src="images/pool-balls/4.png" alt="A pool ball containing the JavaScript logo">
+            <img class="poolBalls" src="images/pool-balls/3.png" alt="A pool ball containing the Python logo">
+            <img class="poolBalls" src="images/pool-balls/2.png" alt="A pool ball containing the Spring logo">
+            <img class="poolBalls" src="images/pool-balls/1.png" alt="A pool ball containing the Java logo">
+        </div>
+        <div>
+            <h2 id="skillsFooterHome">—————— Feel free to click around the rest of my website!  ——————</h2>
+        </div>
+        <!-- Back to top button -->
+        <a href="#" class="backToTop">Back to Top &#8593;</a>
+        <!-- Credit label -->
+        <div>
+            <p id="credit">
+                MADE FROM SCRATCH BY WILLIAM LI
+            </p>
+        </div>
+        <!-- Script to change color of background as user scrolls, needs to be called when body is loaded -->
+        <script type="text/javascript" src="skillsAnimation.js"></script>
+    </body>
+</html>
