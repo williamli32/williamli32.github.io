@@ -75,7 +75,22 @@
     color: #ffffff;
 }
 
-#logoFace:hover {
+#logo {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 2.5em;
+    letter-spacing: .015em;
+    font-size: 1.75em;
+    vertical-align: middle;
+    margin: 0 0 0 1.25em;
+    text-decoration: none;
+    cursor: pointer;
+
+    height: 100px;
+    width: 100px;
+}
+
+#logo:hover {
     animation: ballRollLogo 2.2s;
 }
 @keyframes ballRollLogo {
@@ -91,21 +106,6 @@
     100% {
         transform: rotate(0deg);
     }
-}
-
-#logoFace {
-    display: inline-block;
-    font-weight: 500;
-    line-height: 2.5em;
-    letter-spacing: .015em;
-    font-size: 1.75em;
-    vertical-align: middle;
-    margin: 0 0 0 1.25em;
-    text-decoration: none;
-    cursor: pointer;
-
-    height: 100px;
-    width: 100px;
 }
 
 #menuFiller {
@@ -251,6 +251,6 @@
     color: #ffffff;
     font-family: 'tahoma', sans-serif;
     text-align: center;
-    padding-top: 17%;
+    padding-top: 15%;
     width: 100%;
 }
