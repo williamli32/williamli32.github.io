@@ -102,11 +102,19 @@
     white-space: nowrap;
   }
 
+#wip {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 15%;
+    width: 100%;
+}
+
 #credit {
     color: #ffffff;
     font-family: 'tahoma', sans-serif;
     text-align: center;
-    padding-top: 15%;
     width: 100%;
 }
 
@@ -177,11 +185,37 @@
     }
 }
 
-.workSection {
-    color: #ffffff;
+
+
+
+/* ABOUT PAGE */
+#aboutBody {
+    background: #000000;
+    height: 1600px;
+    overflow-x: hidden;
 }
 
-#skillsHeaderHome {
+#aboutDescriptionName {
+    font-family: 'tahoma', sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+#aboutDescription {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2em;
+    color: #adadad;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    width: 70%;
+}
+
+/* Styling for the words and lines above the skills animation*/
+#skillsHeaderAbout {
     font-family: 'tahoma', sans-serif;
     font-size: 3em;
     color: #ffffff;
@@ -192,7 +226,7 @@
     width: 100%;
 }
 
-#skillsFooterHome {
+#skillsFooterAbout {
     font-family: 'tahoma', sans-serif;
     font-size: 2.2em;
     color: #ffffff;
@@ -201,16 +235,6 @@
     padding-bottom: 2%;
     text-align: center;
     width: 100%;
-}
-
-
-
-
-/* ABOUT PAGE */
-#aboutBody {
-    background: #000000;
-    height: 1600px;
-    overflow-x: hidden;
 }
 
 /* A duplicate 1 ball to cover the animation. Goes away when animation begins. */
@@ -237,6 +261,7 @@
     }
 }
 
+/* Pool cue image styling */
 #poolCue {
     height: 32%;
     width: 200%;
