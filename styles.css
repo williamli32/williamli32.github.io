@@ -1,16 +1,130 @@
-#homeBody {
-    background: #000000;
-    overflow-x: hidden;
+/* SHARED BETWEEN ALL PAGES */
+#logo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-#aboutBody {
-    background: #000000;
-    height: 1600px;
-    overflow-x: hidden;
+#logo:hover {
+    animation: ballRollLogo 2.2s;
+}
+@keyframes ballRollLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-50deg);
+    }
+    55% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media screen and (min-width: 1000px) {
     
+}
+
+#menuFiller {
+    padding-top: 0.7%;
+}
+
+/* Nav */
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+/* Menu bar items hover action */
+#nav a:hover {
+    color: #fdff98;
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.9em;
+}
+
+#nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav ul li {
+    float: left;
+    line-height: 4.5em;
+}
+
+/* Menu Bar items styling */
+#nav ul li a, #nav ul li span {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    font-family: 'tahoma', sans-serif;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+/* Button to go back to top */
+.backToTop {
+    --offset: 50px; 
+    
+    position: sticky;
+    left: 93%;
+    bottom: 20px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'tahoma', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+#wip {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 15%;
+    width: 100%;
+}
+
+#credit {
+    color: #ffffff;
+    font-family: 'tahoma', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/* HOME PAGE */
+#homeBody {
+    background: #000000;
+    overflow-x: hidden;
 }
 
 .typer {
@@ -71,98 +185,37 @@
     }
 }
 
-.workSection {
-    color: #ffffff;
+
+
+
+/* ABOUT PAGE */
+#aboutBody {
+    background: #000000;
+    height: 1600px;
+    overflow-x: hidden;
 }
 
-#logo {
-    display: inline-block;
-    font-weight: 500;
-    line-height: 2.5em;
-    letter-spacing: .015em;
-    font-size: 1.75em;
-    vertical-align: middle;
-    margin: 0 0 0 1.25em;
-    text-decoration: none;
-    cursor: pointer;
-
-    height: 100px;
-    width: 100px;
-}
-
-#logo:hover {
-    animation: ballRollLogo 2.2s;
-}
-@keyframes ballRollLogo {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(-50deg);
-    }
-    55% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-#menuFiller {
-    padding-top: 0.7%;
-}
-
-/* Nav */
-.navLinks li {
-    list-style: none;
-}
-
-.navLinks li a {
-    position: relative;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 6px 0;
-    text-decoration: none;
-}
-
-/* Menu bar items hover action */
-#nav a:hover {
-    color: #fdff98;
-}
-
-#nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 0.9em;
-}
-
-#nav ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-#nav ul li {
-    float: left;
-    line-height: 4.5em;
-}
-
-/* Menu Bar items styling */
-#nav ul li a, #nav ul li span {
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
-    -ms-transition: background-color .25s ease-in-out;
-    transition: background-color .25s ease-in-out;
+#aboutDescriptionName {
     font-family: 'tahoma', sans-serif;
-    letter-spacing: 0.025em;
+    font-size: 3em;
     color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    padding: 0.5em 1em 0.5em 1em;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
-#skillsHeaderHome {
+#aboutDescription {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2em;
+    color: #adadad;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    width: 70%;
+}
+
+/* Styling for the words and lines above the skills animation*/
+#skillsHeaderAbout {
     font-family: 'tahoma', sans-serif;
     font-size: 3em;
     color: #ffffff;
@@ -173,7 +226,7 @@
     width: 100%;
 }
 
-#skillsFooterHome {
+#skillsFooterAbout {
     font-family: 'tahoma', sans-serif;
     font-size: 2.2em;
     color: #ffffff;
@@ -182,6 +235,13 @@
     padding-bottom: 2%;
     text-align: center;
     width: 100%;
+}
+
+/* A duplicate 1 ball to cover the animation. Goes away when animation begins. */
+#coverBall {
+    width: 20%;
+    left: 40%;
+    position: absolute;
 }
 
 /* Pool balls and cue animation */
@@ -201,10 +261,10 @@
     }
 }
 
+/* Pool cue image styling */
 #poolCue {
     height: 32%;
     width: 200%;
-    /* top: 112%; */
     left: 70%;
     position: absolute;
 }
@@ -226,31 +286,4 @@
     100% {
         transform: translate(0%);
     }
-}
-
-/* Button to go back to top */
-.backToTop {
-    --offset: 50px; 
-    
-    position: sticky;
-    left: 93%;
-    bottom: 20px;
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
-    
-    text-decoration: none;
-    padding: 10px;
-    font-family: 'tahoma', sans-serif;
-    color: #ffffff;
-    background: #000000;
-    border-radius: 100px;
-    white-space: nowrap;
-  }
-
-#credit {
-    color: #ffffff;
-    font-family: 'tahoma', sans-serif;
-    text-align: center;
-    padding-top: 15%;
-    width: 100%;
 }
