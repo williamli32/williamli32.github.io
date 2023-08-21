@@ -7,6 +7,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 window.addEventListener('scroll', async () => {
     //detect user scroll value and divides so the value isn't too large
+    //if statement is to change the color values by less if the screen is larger; allows readability
     let scrollChange = ''
     if(document.documentElement.scrollHeight<2200) {
         scrollChange = window.scrollY/15
@@ -34,6 +35,7 @@ window.addEventListener('scroll', async () => {
         }
     }
     
+    //allows website to correct for font size
     if(window.innerWidth>=1150) {
         document.querySelector('#skillsHeaderAbout').style.fontSize = '220%'
         document.querySelector('#skillsFooterAbout').style.fontSize = '220%'
@@ -51,8 +53,7 @@ window.addEventListener('scroll', async () => {
         document.querySelector('#skillsFooterAbout').style.fontSize = '30%'
     }
     
-    console.log(window.innerWidth)
-    
+    //allows website to correct the cue animation for changes in window size
     let poolCue = document.getElementById('poolCue')
     if(window.innerWidth<=285) {
         poolCue.style.top = '3550px'
