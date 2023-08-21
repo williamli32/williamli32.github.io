@@ -50,6 +50,186 @@ window.addEventListener('scroll', async () => {
         document.querySelector('#skillsHeaderAbout').style.fontSize = '30%'
         document.querySelector('#skillsFooterAbout').style.fontSize = '30%'
     }
+    
+    console.log(window.innerWidth)
+    
+    let poolCue = document.getElementById('poolCue')
+    if(window.innerWidth<=285) {
+        poolCue.style.top = '3550px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=287) {
+        poolCue.style.top = '3500px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=292) {
+        poolCue.style.top = '3450px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=295) {
+        poolCue.style.top = '3380px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=298) {
+        poolCue.style.top = '3350px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=301) {
+        poolCue.style.top = '3280px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=310) {
+        poolCue.style.top = '3250px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=313) {
+        poolCue.style.top = '3200px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=316) {
+        poolCue.style.top = '3150px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=318) {
+        poolCue.style.top = '3100px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=321) {
+        poolCue.style.top = '3070px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=330) {
+        poolCue.style.top = '3000px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=332) {
+        poolCue.style.top = '2950px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=338) {
+        poolCue.style.top = '2900px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=342) {
+        poolCue.style.top = '2850px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=347) {
+        poolCue.style.top = '2800px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=357) {
+        poolCue.style.top = '2750px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=364) {
+        poolCue.style.top = '2700px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=369) {
+        poolCue.style.top = '2650px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=382) {
+        poolCue.style.top = '2600px'
+        poolCue.style.height = '12%'
+    }
+    else if(window.innerWidth<=393) {
+        poolCue.style.top = '2550px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=405) {
+        poolCue.style.top = '2500px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=410) {
+        poolCue.style.top = '2450px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=415) {
+        poolCue.style.top = '2400px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=425) {
+        poolCue.style.top = '2350px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=432) {
+        poolCue.style.top = '2300px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=450) {
+        poolCue.style.top = '2250px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=460) {
+        poolCue.style.top = '2200px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=467) {
+        poolCue.style.top = '2150px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=473) {
+        poolCue.style.top = '2120px'
+        poolCue.style.height = '15%'
+    }
+    else if(window.innerWidth<=500) {
+        poolCue.style.top = '2035px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=515) {
+        poolCue.style.top = '1950px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=525) {
+        poolCue.style.top = '1900px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=550) {
+        poolCue.style.top = '1850px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=555) {
+        poolCue.style.top = '1800px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=575) {
+        poolCue.style.top = '1750px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=610) {
+        poolCue.style.top = '1700px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=645) {
+        poolCue.style.top = '1650px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=660) {
+        poolCue.style.top = '1600px'
+        poolCue.style.height = '20%'
+    }
+    else if(window.innerWidth<=740) {
+        poolCue.style.top = '1525px'
+        poolCue.style.height = '32%'
+    }
+    else if(window.innerWidth<=800) {
+        poolCue.style.top = '1450px'
+        poolCue.style.height = '32%'
+    }
+    else if(window.innerWidth<=900) {
+        poolCue.style.top = '1375px'
+        poolCue.style.height = '32%'
+    }
+    else if(window.innerWidth<=1250) {
+        poolCue.style.top = '1250px'
+        poolCue.style.height = '32%'
+    }
+    else {
+        poolCue.style.top = (document.documentElement.scrollHeight*0.65+(100/document.documentElement.scrollHeight)*(1929-document.documentElement.scrollHeight))+'px'
+        poolCue.style.height = '32%'
+    }
 })
 
 async function startPoolAnimation(ballIndex) {
