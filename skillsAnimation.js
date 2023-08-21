@@ -14,7 +14,7 @@ window.addEventListener('scroll', async () => {
     body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 
     //detects when to start the pool ball animation
-    if(window.scrollY>275) {
+    if(window.scrollY>820) {
         document.getElementById('coverBall').style.opacity = '0'
         if(!inProgress) {
             inProgress = true

@@ -5,6 +5,7 @@
     width: 100px;
     vertical-align: middle;
     cursor: pointer;
+    padding: 0.7%;
 }
 
 #logo:hover {
@@ -107,7 +108,6 @@
     font-family: 'tahoma', sans-serif;
     font-size: 0.8em;
     text-align: center;
-    padding-top: 15%;
     width: 100%;
 }
 
@@ -185,6 +185,9 @@
     }
 }
 
+#homePageFiller {
+    padding-top: 15%;
+}
 
 
 
@@ -195,32 +198,28 @@
     overflow-x: hidden;
 }
 
-#aboutDescriptionName {
-    font-family: 'tahoma', sans-serif;
-    font-size: 3em;
-    color: #ffffff;
-    font-weight: 100;
-    padding-left: 10%;
-    padding-top: 5%;
+#aboutPageFiller {
+    padding-top: 7%;
 }
 
 #aboutDescription {
     font-family: 'roboto', sans-serif;
     font-size: 1.2em;
-    color: #adadad;
+    color: #b0b0b0;
     font-weight: 100;
     padding-left: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 1.5%;
+    line-height: 1.5;
     width: 70%;
 }
 
 /* Styling for the words and lines above the skills animation*/
 #skillsHeaderAbout {
     font-family: 'tahoma', sans-serif;
-    font-size: 3em;
+    font-size: 2.2em;
     color: #ffffff;
     font-weight: 100;
-    padding-top: 15%;
+    padding-top: 5.5%;
     padding-bottom: 6%;
     text-align: center;
     width: 100%;
