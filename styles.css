@@ -26,10 +26,6 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
-    
-}
-
 #menuFiller {
     padding-top: 0.7%;
 }
@@ -216,7 +212,7 @@
 /* Styling for the words and lines above the skills animation*/
 #skillsHeaderAbout {
     font-family: 'tahoma', sans-serif;
-    font-size: 2.2em;
+    font-size: 220%;
     color: #ffffff;
     font-weight: 100;
     padding-top: 5.5%;
@@ -227,7 +223,7 @@
 
 #skillsFooterAbout {
     font-family: 'tahoma', sans-serif;
-    font-size: 2.2em;
+    font-size: 220%;
     color: #ffffff;
     font-weight: 100;
     padding-top: 27%;

@@ -7,7 +7,13 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 window.addEventListener('scroll', async () => {
     //detect user scroll value and divides so the value isn't too large
-    let scrollChange = window.scrollY/15
+    let scrollChange = ''
+    if(document.documentElement.scrollHeight<2200) {
+        scrollChange = window.scrollY/15
+    }
+    else {
+        scrollChange = window.scrollY/50
+    }
     //adding values to black makes it lighter gray
     const [r, g, b] = [red+scrollChange, green+scrollChange, blue+scrollChange].map(Math.round)
     //changing CSS from JS: get an element, set its CSS value to a string
@@ -26,6 +32,23 @@ window.addEventListener('scroll', async () => {
                 }
             }
         }
+    }
+    
+    if(window.innerWidth>=1150) {
+        document.querySelector('#skillsHeaderAbout').style.fontSize = '220%'
+        document.querySelector('#skillsFooterAbout').style.fontSize = '220%'
+    }
+    else if(window.innerWidth>=780) {
+        document.querySelector('#skillsHeaderAbout').style.fontSize = '150%'
+        document.querySelector('#skillsFooterAbout').style.fontSize = '150%'
+    }
+    else if(window.innerWidth>=400) {
+        document.querySelector('#skillsHeaderAbout').style.fontSize = '75%'
+        document.querySelector('#skillsFooterAbout').style.fontSize = '75%'
+    }
+    else {
+        document.querySelector('#skillsHeaderAbout').style.fontSize = '30%'
+        document.querySelector('#skillsFooterAbout').style.fontSize = '30%'
     }
 })
 
