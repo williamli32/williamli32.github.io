@@ -300,49 +300,49 @@
     width: 50%;
 }
 
-.btn-slide2 {
+#downloadButtonContainer {
+    padding-top: 1%;
+    text-align: center;
+}
+
+#downloadButton {
+    font-family: 'roboto', sans-serif;
     position: relative;
     display: inline-block;
     height: 50px;
     width: 200px;
     line-height: 50px;
-    padding: 0;
     border-radius: 50px;
-    background: #fdfdfd;
-    border: 2px solid #efa666;
+    background: #adadad;
     margin: 10px;
     transition: .5s;
 }
 
-.btn-slide2:hover {
-    background-color: #efa666;
+#downloadButton:hover {
+    background-color: #ffffff;
 }
 
-.btn-slide2:hover span.circle2 {
+#downloadButton:hover span.downloadIcon {
     left: 100%;
     margin-left: -45px;
-    background-color: #fdfdfd;
-    color: #0099cc;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.btn-slide2:hover span.circle2 {
-    color: #efa666;
-}
-
-.btn-slide2:hover span.title2 {
+#downloadButton:hover span.downloadTitle {
     left: 40px;
     opacity: 0;
 }
 
-.btn-slide2:hover span.title-hover2 {
+#downloadButton:hover span.clickHereTitle {
     opacity: 1;
     left: 40px;
 }
 
-.btn-slide2 span.circle2 {
+#downloadButton span.downloadIcon {
     display: block;
-    background-color: #efa666;
-    color: #fff;
+    background-color: #ffffff;
+    color: #adadad;
     position: absolute;
     float: left;
     margin: 5px;
@@ -355,24 +355,21 @@
     border-radius: 50%;
 }
 
-.btn-slide2 span.title2, .btn-slide2 span.title-hover2 {
+#downloadButton span.downloadTitle, #downloadButton span.clickHereTitle {
     position: absolute;
     text-align: center;
     margin: 0 auto;
     font-size: 16px;
     font-weight: bold;
     transition: .5s;
-    color: #efa666;
+    color: #ffffff;
     left: 80px;
 }
 
-.btn-slide2 span.title-hover2 {
+#downloadButton span.clickHereTitle {
     left: 80px;
     opacity: 0;
-}
-
-.btn-slide2 span.title-hover2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 #resumePageFiller {
