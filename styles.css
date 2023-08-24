@@ -295,16 +295,19 @@
     overflow-x: hidden;
 }
 
+/* Resume image */
 #resume {
     padding-left: 25%;
     width: 50%;
 }
 
+/* Container for the download button to easily center it */
 #downloadButtonContainer {
     padding-top: 1%;
     text-align: center;
 }
 
+/* Download button main button */
 #downloadButton {
     font-family: 'roboto', sans-serif;
     position: relative;
@@ -318,6 +321,7 @@
     transition: .5s;
 }
 
+/* Download button hover change effects */
 #downloadButton:hover {
     background-color: #ffffff;
 }
@@ -339,6 +343,7 @@
     left: 40px;
 }
 
+/* Download button icon styling */
 #downloadButton span.downloadIcon {
     display: block;
     background-color: #ffffff;
@@ -355,6 +360,7 @@
     border-radius: 50%;
 }
 
+/* Download button two different title stylings */
 #downloadButton span.downloadTitle, #downloadButton span.clickHereTitle {
     position: absolute;
     text-align: center;
@@ -366,6 +372,7 @@
     left: 80px;
 }
 
+/* Click here title unique styling */
 #downloadButton span.clickHereTitle {
     left: 80px;
     opacity: 0;
