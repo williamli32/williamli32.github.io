@@ -1,3 +1,5 @@
+@import "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
 /* SHARED BETWEEN ALL PAGES */
 #logo {
     display: inline-block;
@@ -282,4 +284,101 @@
     100% {
         transform: translate(0%);
     }
+}
+
+
+
+
+/* RESUME PAGE */
+#resumeBody {
+    background: #000000;
+    overflow-x: hidden;
+}
+
+/* Resume image */
+#resume {
+    padding-left: 25%;
+    width: 50%;
+}
+
+/* Container for the download button to easily center it */
+#downloadButtonContainer {
+    padding-top: 1%;
+    text-align: center;
+}
+
+/* Download button main button */
+#downloadButton {
+    font-family: 'roboto', sans-serif;
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    border-radius: 50px;
+    background: #adadad;
+    margin: 10px;
+    transition: .5s;
+}
+
+/* Download button hover change effects */
+#downloadButton:hover {
+    background-color: #ffffff;
+}
+
+#downloadButton:hover span.downloadIcon {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#downloadButton:hover span.downloadTitle {
+    left: 40px;
+    opacity: 0;
+}
+
+#downloadButton:hover span.clickHereTitle {
+    opacity: 1;
+    left: 40px;
+}
+
+/* Download button icon styling */
+#downloadButton span.downloadIcon {
+    display: block;
+    background-color: #ffffff;
+    color: #adadad;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+/* Download button two different title stylings */
+#downloadButton span.downloadTitle, #downloadButton span.clickHereTitle {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .5s;
+    color: #ffffff;
+    left: 80px;
+}
+
+/* Click here title unique styling */
+#downloadButton span.clickHereTitle {
+    left: 80px;
+    opacity: 0;
+    color: #000000;
+}
+
+#resumePageFiller {
+    padding-top: 7%;
 }
