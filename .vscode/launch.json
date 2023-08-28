@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open webpage",
-            "file": "c:\\Users\\wliem\\williamli32.github.io\\home.html"
+            "name": "Open chrome (doesn't work on Linux)",
+            "file": "/home/hithere1337/Projects/williamli32.github.io",
+            "runtimeExecutable": "/home/hithere1337/Projects/williamli32.github.io"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Open firefox",
+            "file": "/home/hithere1337/Projects/williamli32.github.io",
         }
     ]
 }
