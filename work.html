@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="workStyles.css" />
+    </head>
+    <!-- id workBody is used to identify the body for the work page. -->
+    <body id="workBody">
+        <div id="headerWrapper">
+            <header id="header" class="container">
+                <!-- Filler to create a gap between the top of the site and the menu bar -->
+                <div id="menuFiller"></div>
+                <!-- Logo -->
+                <a href="home.html">
+                    <img id="logo" src="images/wl-logo.png" alt="The logo on William Li's personal website">
+                </a>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul class="navLinks">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="work.html">MY WORK</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!-- Code inspired from https://codepen.io/Kseso/pen/JyEWoP -->
+        <div>
+            <article>
+                <figure id="introSlide">
+                    <h1>MY WORK</h1>
+                    <p>Continue scrolling to learn about my work experience and projects!</p>
+                    <svg class="arrows">
+                        <!-- Code inspired from https://codepen.io/postor/pen/vYpNYg -->
+                        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                      </svg>
+                </figure>
+                
+                <figure id="sfImageSlide">
+                    <img src='images/work-page/state-farm.png' alt />
+                </figure>
+                
+                <figure id="sfDescSlide">
+                    <h1>
+                        State Farm
+                    </h1>
+                    <p>
+                        I worked with State Farm in the summer of 2022, summer 2023, and into fall 2023. Through my internship, I
+                        gained experience in backend development, mostly on API development and testing. I was able to work on
+                        adding some features to the Digital Auto Quote API, writing automated acceptance tests to test the APIs, and
+                        a fully automated script to dynamically autofill screens of the Digital Auto Quote and Purchase UI (longer 
+                        description in about page). 
+                    </p>
+                    <p>
+                        Skills I utilized:
+                    </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>JavaScript</li>
+                        <li>Automated Acceptance Tests (AATs) with CodeceptJS</li>
+                        <li>Git</li>
+                        <li>Postman, Chrome DevTools</li>
+                    </ul>
+                </figure>
+                
+                <figure id="websiteImageSlide">
+                    <img src='images/work-page/personal-website.png' alt />
+                </figure>
+                
+                <figure id="websiteDescSlide">
+                    <p>hello world 2</p>
+                </figure>
+                
+                <figure id="stockImageSlide">
+                    <p>no image yet</p>
+                </figure>
+                
+                <figure id="stockDescSlide">
+                    <p>hello world 3</p>
+                </figure>
+            </article>
+        </div>
+        <div id="workPageFiller"></div>
+        <!-- Back to top button -->
+        <a href="#" class="backToTop">Back to Top &#8593;</a>
+        <!-- Credit label -->
+        <div>
+            <p id="wip">
+                Please ignore the dust, this website is still a work in progress!
+            </p>
+            <p id="credit">
+                MADE FROM SCRATCH BY WILLIAM LI, 2023
+            </p>
+        </div>
+    </body>
+</html>
