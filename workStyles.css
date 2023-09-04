@@ -249,15 +249,19 @@
     font-family: 'roboto', sans-serif;
 }
 
-#sfDescSlide h1 {
+#sfDescSlide h1, #websiteDescSlide h1, #stockDescSlide h1 {
     padding-left: 10%;
     padding-top: 10%;
 }
 
-#sfDescSlide p {
+#sfDescSlide p, #websiteDescSlide p, #stockDescSlide p {
     padding-left: 10%;
     width: 80%;
     line-height: 1.25;
+}
+
+#sfDescSlide li, #websiteDescSlide li, #stockDescSlide li {
+    margin-left: 12%;
 }
 
 #websiteDescSlide {
@@ -266,10 +270,22 @@
     font-family: 'roboto', sans-serif;
 }
 
+#stockImageSlide {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    padding-top: 25%;
+}
+
 #stockDescSlide {
     background-color: #000000;
     color: #ffffff;
     font-family: 'roboto', sans-serif;
+}
+
+#fillerSlide {
+    background-color: #000000;
 }
 
 #workPageFiller {

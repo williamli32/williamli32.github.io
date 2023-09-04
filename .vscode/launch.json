@@ -15,7 +15,7 @@
             "type": "firefox",
             "request": "launch",
             "name": "Open firefox",
-            "file": "/home/hithere1337/Projects/williamli32.github.io",
+            "file": "/home/hithere1337/Projects/williamli32.github.io/work.html"
         }
     ]
 }
